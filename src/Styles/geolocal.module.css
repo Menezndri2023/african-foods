@@ -1,14 +1,80 @@
-body {
-    font-family: Arial, sans-serif;
-}
 
-.app {
+.searchGlobal {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    color: black;
+    height: 10rem;
+    align-items: center;
     text-align: center;
     padding: 1rem;
+    font-family: Arial, sans-serif;
+}
+.searchContener{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 4rem;
+    border: 2px solid rgb(54, 38, 70);
+    width: 35rem;
+    border-radius: 30px;
+    padding: 8px;
+}
+.search{
+    background-color: #f2f2f2;
+    display: flex;
+    margin-left: 50px;
+    text-align: center;
+    border: none;
+    justify-content: space-between;
+    border-radius: 30px;
+    height: 3rem;
+    width: 25rem;
+
+}
+.search:focus {
+    cursor: pointer;
+  }
+.local{
+    display: flex;
+    max-height: 25px;
+    
+}
+
+.suggestions {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    position: absolute;
+    width: 10%;
+    z-index: 1;
+}
+
+.suggestions li {
+    padding: 8px;
+    cursor: pointer;
+}
+
+.suggestions li:hover {
+    background-color: #f2f2f2;
 }
 
 button {
-    padding: 0.5rem 1rem;
-    font-size: 1rem;
-    margin-top: 1rem;
+    display: flex;
+    max-height: 3rem;
+    border: none;
+}
+button:hover{
+    cursor: pointer;
+    color: blue;
+    
+}
+@media screen and (max-width:720px) {
+    .searchContener {
+        width: 90%; /* Ajusté la largeur en pourcentage pour une meilleure adaptation */
+    }
+
 }
