@@ -1,32 +1,24 @@
-
-.container{
-    /* position: relative; */
-    display: flex;
-    flex-direction: row;
-    background: green;
-
-
-}
-.contenerImg{
-    display: flex;
-    top: 15rem;
-    right: 10rem;
-    height: 15rem;
+.bannerItem {
+    position: relative;
+    margin: 10px;
+    background: yellow;
+    height: 20rem;
     width: 100%;
-    justify-content: space-between;
 }
-.imgCarrousel {
+.imgFoods{
     position: absolute;
-    height: 8rem;
-    width: 1rem;
+    top: 30px;
+    right: 70px;
+    height: 15rem;
+    max-width: 20rem;
     border-radius: 50%;
-    
+    overflow: hidden;
 }
 
 .heading {
     position: absolute;
-    top: 1rem;
-    left: 50rem;
+    top: 50px;
+    left: 50px;
     font-size: 40px;
     font-weight: bold;
     font-family: "Poppins", sans-serif;
@@ -34,20 +26,21 @@
 
 .desc {
     position: absolute;
-    top: 2rem;
+    top: 120px;
     left: 50px;
     font-size: 20px;
 }
 
 .cta {
-    /* position: absolute;
-    top: 2rem;
+    position: absolute;
+    top: 275px;
     left: 50px;
+    bottom: 15px;
     color: #000;
     border: 2px solid #000;
     border-radius: 5px;
     padding: 6px 12px;
-    cursor: pointer; */
+    cursor: pointer;
 }
 
 .cta a {

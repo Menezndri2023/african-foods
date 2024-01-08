@@ -10,7 +10,7 @@ import { Link } from "react-router-dom";
 const Banner = () => {
     return (
 
-    <div className={bannerStyles.container}>
+     
         <Carousel
             autoPlay={true}
             infiniteLoop={true}
@@ -18,8 +18,8 @@ const Banner = () => {
             showThumbs={false}
             showStatus={false}
         >
-            <div className={bannerStyles.contenerImg}>
-                <img src={ivoireFoods} alt=""  className={bannerStyles.imgCarrousel}/>
+            <div className={bannerStyles.bannerItem}>
+                <img src={ivoireFoods} alt="" className={bannerStyles.imgFoods} />
                 <div className={bannerStyles.heading}>ivoire foods</div>
                 <div className={bannerStyles.desc}>
                     Buy vegetables and get potatoes free. Conditions apply
@@ -28,26 +28,26 @@ const Banner = () => {
                     <Link to="/items/vegetables">Shop Now</Link>
                 </div>
             </div>
-            <div className={bannerStyles.contenerImg}>
-                <img src={senegalFoods} alt=""  className={bannerStyles.imgCarrousel}/>
+            <div className={bannerStyles.bannerItem}>
+                <img src={senegalFoods} alt="" className={bannerStyles.imgFoods} />
                 <div className={bannerStyles.heading}>
-                    Senegal foods
+                Senegal foods
                 </div>
                 <div className={bannerStyles.desc}>Royal Gala Apples</div>
                 <div className={bannerStyles.cta}>
                     <Link to="/items/fruits">Shop Now</Link>
                 </div>
             </div>
-            <div className={bannerStyles.contenerImg}>
-                <img src={beninFoods} alt=""  className={bannerStyles.imgCarrousel}/>
+            <div className={bannerStyles.bannerItem}>
+                <img src={beninFoods} alt="" className={bannerStyles.imgFoods} />
                 <div className={bannerStyles.heading}>Benin foods</div>
                 <div className={bannerStyles.desc}>Start your day with a fruit</div>
                 <div className={bannerStyles.cta}>
                     <Link to="/items/fruits">Shop Now</Link>
                 </div>
             </div>
-            <div className={bannerStyles.contenerImg}>
-                <img src={cameroonFoods} alt=""  className={bannerStyles.imgCarrousel}/>
+            <div className={bannerStyles.bannerItem}>
+                <img src={cameroonFoods} alt="" className={bannerStyles.imgFoods} />
                 <div className={bannerStyles.heading}>Cameroun foods</div>
                 <div className={bannerStyles.desc}>20% discount on French Beans</div>
                 <div className={bannerStyles.cta}>
@@ -55,7 +55,7 @@ const Banner = () => {
                 </div>
             </div>
         </Carousel>
-    </div>
+       
 
     )
 }
